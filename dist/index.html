@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link id="favicon" rel="icon" type="image/png" href="" />
+    <title>Weather App</title>
   <script defer src="main.js"></script></head>
-  <body></body>
+  <body>
+    <input type="text" id="search" placeholder="Enter city name..." />
+    <button id="searchButton">Search</button>
+    <button id="togelButton">C/F&deg;</button>
+    <div class="info-container">
+      <div class="resolvedAddress"></div>
+      <div class="temp"></div>
+
+      <div class="description"></div>
+    </div>
+    <div class="chart-container">
+      <canvas id="myChart" width="100%" height="100%"></canvas>
+      <img alt="" />
+    </div>
+  </body>
 </html>
